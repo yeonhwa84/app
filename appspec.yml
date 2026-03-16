@@ -1,0 +1,24 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /opt/tomcat10/webapps/ROOT
+hooks:
+  BeforeInstall:
+    - location: scripts/stop_tomcat.sh
+      timeout: 30
+  AfterInstall:
+    - location: scripts/start_tomcat.sh
+      timeout: 60
+
+
+### 2. scripts 폴더 생성
+### ject01 우클릭
+### → New → Folder
+### → 폴더 이름: scripts
+### → Finish
+
+### 3. stop_tomcat.sh 생성
+### scripts 폴더 우클릭
+### → New → File
+### → 파일 이름: stop_tomcat.sh
