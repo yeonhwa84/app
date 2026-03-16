@@ -5,7 +5,7 @@
  
       수정일         수정자                   수정내용
     -------    --------    ---------------------------
-     2011.08.31  JJY       경량환경 버전 생성
+     2011.08.31  JJY       경량환sssssss경 버전 생성
  
     author   : 실행환경 개발팀 JJY
     since    : 2011.08.31
@@ -14,6 +14,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%--
+xptmxm
 <jsp:forward page="/cmm/main/mainPage.do"/>
 --%>
 
