@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>전자정부 프레임워크 · Dev Portal</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/egov.css" />
+</head>
+<body>
+
+<div class="blob b1"></div>
+<div class="blob b2"></div>
+
+<div class="page">
+
+  <!-- 사이드바 -->
+  <aside>
+    <div class="profile">
+      <div class="avatar">연</div>
+      <div>
+        <div class="profile-name">연화의<br/>Dev Space</div>
+        <div class="profile-role">Java Developer</div>
+        <div class="online"><span class="online-dot"></span>개발 중</div>
+      </div>
+    </div>
+
+    <nav class="nav-group">
+      <div class="nav-label">메뉴</div>
+      <a class="nav-item" href="index.html">
+        <span class="nav-ico">⊞</span>대시보드
+      </a>
+      <a class="nav-item active" href="egov.html">
+        <span class="nav-ico">🏛️</span>전자정부 프레임워크
+      </a>
+      <a class="nav-item" href="game.html">
+        <span class="nav-ico">💌</span>미연시 게임
+      </a>
+    </nav>
+
+    <div class="sidebar-foot">
+      <a href="https://github.com/yeonhwa84/appProject01" target="_blank">🐱 GitHub</a><br/>
+      yeonhwa84 · 2025
+    </div>
+  </aside>
+
+  <!-- 메인 -->
+  <main>
+    <div class="hero">
+      <div class="hero-chip egov">🏛️ 전자정부 프레임워크</div>
+      <h1>eGov <em class="egov">프로젝트</em></h1>
+      <p class="hero-sub">Spring MVC, MyBatis 기반 행정 시스템 개발 공간이에요.</p>
+    </div>
+
+    <!-- 서버 연결 배너 -->
+    <div class="server-banner">
+      <div class="server-info">
+        <span class="server-dot"></span>
+        <div>
+          <div class="server-label">서버 연결됨</div>
+          <div class="server-url">http://15.165.130.85:8080/appProject01</div>
+        </div>
+      </div>
+      <a class="server-btn"
+         href="http://15.165.130.85:8080/appProject01/uat/uia/egovLoginUsr.do"
+         target="_blank">
+        🚀 서버 열기 ↗
+      </a>
+    </div>
+
+    <!-- 구현 항목 -->
+    <div class="sec-head">
+      <h2>구현 항목</h2>
+      <span class="sec-count">4개</span>
+    </div>
+
+    <div class="egov-grid">
+
+      <a class="egov-card"
+         href="http://15.165.130.85:8080/appProject01/uat/uia/egovLoginUsr.do"
+         target="_blank">
+        <div class="egov-card-top">
+          <span class="card-ico">🔐</span>
+          <span class="egov-tag">연결됨</span>
+        </div>
+        <h4>로그인 / 인증</h4>
+        <p>스프링 시큐리티 기반 사용자 인증 및 세션 관리</p>
+      </a>
+
+      <div class="egov-card">
+        <div class="egov-card-top">
+          <span class="card-ico">📋</span>
+          <span class="egov-tag">구현 중</span>
+        </div>
+        <h4>게시판 CRUD</h4>
+        <p>목록, 등록, 수정, 삭제 eGov 표준 패턴 구현</p>
+      </div>
+
+      <div class="egov-card">
+        <div class="egov-card-top">
+          <span class="card-ico">🧩</span>
+          <span class="egov-tag">구현 중</span>
+        </div>
+        <h4>공통 컴포넌트</h4>
+        <p>eGov 공통 모듈 연동 및 커스터마이징</p>
+      </div>
+
+      <div class="egov-card">
+        <div class="egov-card-top">
+          <span class="card-ico">📁</span>
+          <span class="egov-tag">예정</span>
+        </div>
+        <h4>파일 업로드</h4>
+        <p>첨부파일 등록 및 다운로드 기능</p>
+      </div>
+
+    </div>
+  </main>
+</div>
+</body>
+</html>

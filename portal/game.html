@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>미연시 게임 · Dev Portal</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/game.css" />
+</head>
+<body>
+
+<div class="blob b1"></div>
+<div class="blob b2"></div>
+
+<div class="page">
+
+  <!-- 사이드바 -->
+  <aside>
+    <div class="profile">
+      <div class="avatar">연</div>
+      <div>
+        <div class="profile-name">연화의<br/>Dev Space</div>
+        <div class="profile-role">Java Developer</div>
+        <div class="online"><span class="online-dot"></span>개발 중</div>
+      </div>
+    </div>
+
+    <nav class="nav-group">
+      <div class="nav-label">메뉴</div>
+      <a class="nav-item" href="index.html">
+        <span class="nav-ico">⊞</span>대시보드
+      </a>
+      <a class="nav-item" href="egov.html">
+        <span class="nav-ico">🏛️</span>전자정부 프레임워크
+      </a>
+      <a class="nav-item active" href="game.html">
+        <span class="nav-ico">💌</span>미연시 게임
+      </a>
+    </nav>
+
+    <div class="sidebar-foot">
+      <a href="https://github.com/yeonhwa84/appProject01" target="_blank">🐱 GitHub</a><br/>
+      yeonhwa84 · 2025
+    </div>
+  </aside>
+
+  <!-- 메인 -->
+  <main>
+    <div class="hero">
+      <div class="hero-chip game">💌 미연시 게임</div>
+      <h1>Visual Novel <em class="game">프로젝트</em></h1>
+      <p class="hero-sub">Java로 만드는 비주얼 노벨 게임. 대화 분기와 캐릭터 시스템을 설계해요.</p>
+    </div>
+
+    <!-- 서버 연결 배너 (미연결 상태 → 나중에 서버 생기면 egov.html처럼 교체) -->
+    <div class="server-banner offline">
+      <div class="server-info">
+        <span class="server-dot"></span>
+        <div>
+          <div class="server-label">서버 미연결</div>
+          <!--
+            나중에 게임 서버가 생기면 아래처럼 수정하세요:
+            <div class="server-url">http://서버주소:포트/게임경로</div>
+          -->
+          <div class="server-url">서버 주소를 여기에 입력하세요</div>
+        </div>
+      </div>
+      <!--
+        서버 연결 후 아래 버튼의 href를 실제 주소로 교체하세요
+        <a class="connect-btn" href="http://서버주소/게임경로" target="_blank">🚀 서버 열기 ↗</a>
+      -->
+      <button class="connect-btn" onclick="alert('서버 주소를 연결해주세요! 🌸')">
+        🔗 서버 연결하기
+      </button>
+    </div>
+
+    <!-- 구현 항목 -->
+    <div class="sec-head">
+      <h2>구현 항목</h2>
+      <span class="sec-count">4개</span>
+    </div>
+
+    <div class="game-grid">
+
+      <div class="game-card">
+        <div class="game-card-top">
+          <span class="card-ico">💬</span>
+          <span class="game-tag wip">진행 중</span>
+        </div>
+        <h4>대화 시스템</h4>
+        <p>선택지 분기 및 스크립트 엔진 설계. JSON 기반 씬 파일 로딩.</p>
+      </div>
+
+      <div class="game-card">
+        <div class="game-card-top">
+          <span class="card-ico">💗</span>
+          <span class="game-tag todo">예정</span>
+        </div>
+        <h4>호감도 시스템</h4>
+        <p>캐릭터별 호감도 변수 및 수치에 따른 엔딩 분기.</p>
+      </div>
+
+      <div class="game-card">
+        <div class="game-card-top">
+          <span class="card-ico">🎨</span>
+          <span class="game-tag todo">예정</span>
+        </div>
+        <h4>캐릭터 & 배경</h4>
+        <p>이미지 렌더링 및 씬 전환 애니메이션 구현.</p>
+      </div>
+
+      <div class="game-card">
+        <div class="game-card-top">
+          <span class="card-ico">💾</span>
+          <span class="game-tag todo">예정</span>
+        </div>
+        <h4>세이브 / 로드</h4>
+        <p>게임 상태 직렬화 및 파일 저장/불러오기.</p>
+      </div>
+
+    </div>
+
+    <!-- 진행률 -->
+    <div class="progress-wrap">
+      <div class="progress-label">
+        <span>전체 진행률</span>
+        <span>25%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 25%;"></div>
+      </div>
+    </div>
+
+  </main>
+</div>
+</body>
+</html>
