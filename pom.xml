@@ -2,11 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>appProject01</groupId>
-	<artifactId>appProject01</artifactId>
+	<groupId>app</groupId>
+	<artifactId>app</artifactId>
 	<packaging>war</packaging>
 	<version>1.0.0</version>
-	<name>appProject01</name>
+	<name>app</name>
 	<url>http://www.egovframe.go.kr</url>
 
 	<licenses>
