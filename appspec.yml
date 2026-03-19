@@ -2,12 +2,13 @@ version: 0.0
 os: linux
 files:
   - source: target/app-1.0.0.war
-    destination: /opt/tomcat10/webapps/
-    destination-name: app.war
+    destination: /opt/tomcat10/webapps
 hooks:
   BeforeInstall:
     - location: scripts/stop_tomcat.sh
       timeout: 30
   AfterInstall:
+    - location: scripts/rename_war.sh
+      timeout: 30
     - location: scripts/start_tomcat.sh
       timeout: 60
