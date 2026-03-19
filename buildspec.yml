@@ -12,11 +12,11 @@ phases:
     commands:
       - echo "Build complete"
 
-artifacts:
-  files:
-    - target/*.war
-    - appspec.yml
-    - scripts/**/*
-    - src/main/webapp/portal/**/*
-  discard-paths: no
+  artifacts:
+    files:
+      - target/app-1.0.0.war
+      - appspec.yml
+      - scripts/**/*          
+      - src/main/webapp/portal/**/*
+    discard-paths: no
   
