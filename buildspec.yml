@@ -12,7 +12,7 @@ phases:
     commands:
       - echo "Build complete"
 
-  artifacts:
-    files:
-      - "**/*"
-    discard-paths: no
+artifacts:
+  files:
+    - "**/*"
+  discard-paths: no
